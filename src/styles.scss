@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+
+// html, body { height: 100%; }
+body { 
+    // margin: 0; 
+    // font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color: var(--body);
+    // background-image: linear-gradient(46deg, #b0b0b0ad, #ddddddd1, #d3d1d1c9);
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    font-family: Roboto, Arial, "Helvetica Neue", sans-serif;
+    button{
+        background: none;
+        cursor: ponteir
+    }
+}
+:root{
+    --headerColor: #e0e0e069;
+    --primary: darkslategray ;
+    --body: #fff;
+    --text-menu: #fff;
+    --text-body: #000000;
+    --color: #054839;
+    --banner: url(./assets/Design-Banner.jpg);
+    --colorName: #f7e601;
+    --filter: drop-shadow(-1px 2px 2px #272727);
+    --filter2: drop-shadow(-1px 2px 2px rgb(179, 177, 177));
+    color: black;
+}
+
+:root .dark-theme{
+    --headerColor: rgb(0 3 11 / 46%);
+    --primary:  rgba(255, 0, 43, 0.877);
+    --body: black;
+    --text-menu: #fff;
+    --text-body: #fff;
+    --color:  rgba(255, 0, 43, 0.877);
+    --banner: url(./assets/background.png);
+    --colorName: #f7e601;
+    --filter: drop-shadow(0px 0px 0px #035353);
+    --filter2: drop-shadow(0px 0px 0px rgb(179, 177, 177));
+    color:white;
+}
+
+.dark_light{
+    color: var(--text-body)
+}
+
+span, .mudarCor{
+    color: var(--text-body);
+}
+
+.skills__icon{
+    background-color: var(--primary);
+}
+
+.skills__tittle, .description__tittle{
+    color: var(--color);
+}
+
+.apresentacao{
+    background-image: var(--banner);
+    z-index: 9;
+}
+
+
+.apresentacao__text{
+    color:var(--text-body);
+    filter: var(--filter2);
+    .apresentacao__text_h1{
+        color: var(--colorName);
+        filter: var(--filter);
+    }
+}
+
+.card_Posion > a{
+    text-decoration: none;
+    color:var(--text-body);
+}
+
+.header{
+    background-color: var(--headerColor);
+    color: var(--text-body);
+    .title-group .a{
+        color: var(--text-body);
+        text-decoration: none;
+    }
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+    src: url(./assets/fonts/Ubuntu/Ubuntu-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Ubuntu-Italic;
+    src: url(./assets/fonts/Ubuntu/Ubuntu-Italic.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-Medium;
+    src: url(./assets/fonts/Ubuntu/Ubuntu-Medium.ttf);
+    font-weight:bold
+}
+
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(./assets/fonts/Ubuntu/Ubuntu-Light.ttf);
+    font-weight: lighter;
+}

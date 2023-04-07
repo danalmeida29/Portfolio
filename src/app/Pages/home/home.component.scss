@@ -1,0 +1,309 @@
+.container {
+  background: #01071e61;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: column;
+  /*-----------------------------------------------------Banner------------------------------------------------------------*/
+  .apresentacao{
+    grid-area:banner;
+    display: grid;
+    height: auto;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.541);
+    grid-template-areas:
+    'menu menu'
+    'hello avatar';
+    grid-template-columns: 50%;
+    grid-template-rows: 100px;
+    justify-items: center;
+   
+    
+    .header{
+      grid-area: menu;
+      width: 100%;
+      height: auto;
+      position: fixed;
+      z-index: 9999;
+    }
+    
+    .apresentacao__title{
+      display: flex;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+      grid-area: hello;
+
+      .apresentacao__text{
+        
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+
+        .apresentacao__text_h1{
+          margin-top: 2px;
+          margin-left: 5px;
+          margin-bottom: -1px;
+          font-size: 35px;
+          font-family: monospace;
+        
+        }
+
+        .apresentacao__text_a{
+          color:  #911200;
+          transition: all 0.5s;
+        }
+        .apresentacao__text_a:hover{
+          -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+          -webkit-filter: drop-shadow(15px 10px 5px rgba(255, 255, 255, 0.829));
+          filter: drop-shadow(15px 10px 5px rgba(255, 255, 255, 0.5));
+        }
+      }
+    }
+
+
+
+    .apresentacao__img{
+      display: flex;
+      width: 240px;
+      justify-content: center;
+      align-items: center;
+      grid-area: avatar;
+
+      .avatar{
+        width: 635px;
+      }
+
+    }
+  }
+
+   /*-----------------------------------------------------Sobre-min------------------------------------------------------------*/
+
+  .sobre-mim {
+    
+    display: contents;
+    width: auto;
+    min-width: 350px;
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    .tittle{
+      display: contents;
+      font-family: "Ubuntu-Bold";
+      font-weight: bold;
+      width: auto;
+      min-width: 350px;
+      height: 300px;
+      min-height: 250px;
+      margin-top: 5px;
+      margin-bottom: -15px;
+    }
+    .section__tittle {
+      width: auto;
+      height: auto;
+      min-width: 350px;
+      min-height: 250px;
+      font-size: 200px;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      background: linear-gradient(#444, #000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    
+  }
+
+  /*-----------------------------------------------------Projetos------------------------------------------------------------*/
+
+  .projetos {
+    
+    display: contents;
+    width: auto;
+    min-width: 350px;
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .tittle{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      font-family: "Ubuntu-Bold";
+      font-weight: bold;
+      width: auto;
+      min-width: 350px;
+      height: 300px;
+      min-height: 250px;
+      margin-top: 5px;
+      margin-bottom: -15px;
+      flex-direction: row;
+    }
+    .section__tittle {
+      margin-top: 150px;
+      width: auto;
+      height: auto;
+      min-width: 350px;
+      min-height: 250px;
+      font-size: 200px;
+      text-align: center;
+      background: linear-gradient(#444, #000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .capsula{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
+    }
+    .reactAngular{
+      display: flex;
+      align-items: center;
+      width: 100vh;
+      margin-top: 110px;
+      margin-right: 390px;
+      margin-left: -390px;
+      margin-bottom: -55px;
+      justify-content: flex-start;
+      flex-direction: row;
+      span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-left: 50px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        // background: crimson;
+        border-radius: 50px;
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+      #angular{
+        background-color: #dd0031;
+        box-shadow: #444 3px 4px 3px 0px;
+        color: aliceblue;
+        img{
+          width: 35px;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+      #react{
+        background-color: #61dbfb;
+        box-shadow: #444 3px 4px 3px 0px;
+        color: #000;
+        img{
+          width: 40px;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    .card-container {
+      width: auto;
+      min-width: 350px;
+      height: auto;
+      min-height: 350px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .card_Posion{
+      display: flex;
+      height: auto;
+      min-height: 350px;
+      width: auto;
+      min-width: 350px;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      padding: 2px;
+      margin-bottom: -50px;
+      margin-left: 25px;
+      margin-right: 25px;
+      gap: 60px;
+      > a{
+        margin: 0;
+      }
+    }
+     
+  }
+
+  /*-----------------------------------------------------Contato------------------------------------------------------------*/
+
+  .contatos {
+    display: contents;
+    width: auto;
+    min-width: 350px;
+    max-width: 1200px;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    .tittle{
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      font-family: "Ubuntu-Bold";
+      font-weight: bold;
+      width: auto;
+      min-width: 350px;
+      height: 300px;
+      min-height: 250px;
+      margin-top: 5px;
+      margin-bottom: -15px;
+      flex-direction: row;
+    }
+    .section__tittle {
+      margin-top: 150px;
+      width: auto;
+      height: auto;
+      min-width: 350px;
+      min-height: 250px;
+      font-size: 200px;
+      text-align: center;
+      background: linear-gradient(#444, #000);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    
+   .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+   } 
+
+  }
+  
+}
+

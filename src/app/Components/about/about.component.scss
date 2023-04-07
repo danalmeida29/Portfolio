@@ -1,0 +1,131 @@
+.description_skills{
+    display: grid;
+    height: auto;
+    min-height: 350px;
+    width: auto;
+    min-width: 350px;
+    grid-template-areas: "description skills";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 13px;
+    padding: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+  
+}
+
+.description{
+    grid-area: description;
+    display: flex;
+    gap: 26px;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .description__tittle {
+      font-family:'Ubuntu-Medium';
+      font-size: 48px;
+      font-weight: 700;
+    
+      text-align: left;
+ 
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-bottom: 25px;
+      margin-top: -10px;
+      padding: 10px;
+    }
+
+    .description__text {
+      font-family: "Ubuntu-Light";
+      font-size: 23px;
+      font-weight: 300;
+      width: auto;
+      min-width: 350px;
+      line-height: 150%;
+      text-align: left;
+      padding: 3px;
+      margin-left: 10px;
+      margin-right: 5px;
+      margin-top: -28px;
+   
+      justify-content: center;
+    }
+  }
+
+  .skills{
+    grid-area: skills;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .skills__tittle {
+      font-family:'Ubuntu-Bold';
+      font-size: 48px;
+      font-weight: bold;
+
+      padding: 8px;
+      margin-left: 5px;
+      margin-right: 10px;
+      margin-bottom: 25px;
+      margin-top: -10px;
+    }
+
+    .skills__container {
+      display: flex;
+      width: auto;
+      min-width: 350px;
+      height: auto;
+      min-height: 350px;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: flex-start;
+      flex-direction: row;
+
+      margin-right: 10px;
+      margin-left: 5px;
+      margin-top: -7px;
+      padding: 0px;
+    }
+    .skills__icon {
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+ 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .fa-react{
+      width: 65px;
+      margin-bottom: -3px;
+    }
+    .fa-angular{
+      width: 55px;
+      margin-bottom: -3px;
+    }
+    .fa-github{
+      width: 60px;
+      margin-bottom: -6px;
+    }
+    .fa-ts{
+      width: 60px;
+      margin-bottom: -4px;
+    }
+    .fa-js{
+      width: 55px;
+      margin-bottom: -5px;
+    }
+    .fa-css3{
+      width: 45px;
+      margin-bottom: -3px;
+    }
+    .fa-html5{
+      width: 45px;
+      margin-bottom: -3px;
+    }
+  }
