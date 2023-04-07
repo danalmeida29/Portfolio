@@ -2,7 +2,7 @@
 <div class="container">
     <div class="apresentacao" id="inicio">
     
-        <app-header class="header" inicio="#inicio" sobreMin="#sobreMin" projetos="#projetos" contato="#contato"></app-header>
+        <app-header  (window:load)="autoToggleTheme()"  class="header" inicio="#inicio" sobreMin="#sobreMin" projetos="#projetos" contato="#contato"></app-header>
         
         <div class="apresentacao__title">
             <h3 class="apresentacao__text">Olá, Meu nome é
