@@ -1,0 +1,16 @@
+{
+    "whoAmI": "Quem sou?",
+    "home": "Inicio",
+    "skills": "Habilidades:",
+    "contact": "Contato",
+    "socialNetwork": "Redes Sociais",
+    "about": "Sobre-min",
+    "text": "De São Paulo - SP e tenho 25 anos, estou no inicio da minha carreira como desenvolvedor, e em breve estarei me formando em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi. Sou apaixonado por tecnologia e games mas principalmente por desenvolvimento web. Fui voluntario por 2 anos e 10 meses como Desenvolvedor Front-End em um projeto para um centro de acolhimento de idosos; Onde fui responsavel pela criações de telas responsivas e funcionais do projeto. Atualmente estou estudando a biclioteca React e a Framework Next.js e prentendo começar a estudar as principais tecnologias e linguagens de programação Back-End, para futuramente me tornar um desenvolvedor Full-Stack.",
+    "projects": "Projetos",
+    "angular": "Projetos Angular",
+    "react": "Projetos React",
+    "introduction": "Olá, Meu nome é",
+    "name": "Daniel Almeida",
+    "overview":"e sou Desenvolvedor Web Front-end",
+    "footer": "Todos os direitos reservados 2023 | Desenvolvido por Daniel Almeida ®"
+}

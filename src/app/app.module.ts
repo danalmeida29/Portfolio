@@ -10,10 +10,9 @@ import { MaterialModule } from './material.module';
 import { ProjetosComponent } from './Components/projetos/projetos.component';
 import { AboutComponent } from './Components/about/about.component';
 import { ContatoComponent } from './Components/contato/contato.component';
-
-// import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-// // import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-// import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,25 +24,23 @@ import { ContatoComponent } from './Components/contato/contato.component';
     ContatoComponent,
   ],
   imports: [
-  //   SlickCarouselModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    // HttpClientModule,
-    // TranslateModule.forRoot({
-    //   loader: {
-    //       provide: TranslateLoader,
-    //       useFactory: HttpLoaderFactory,
-    //       deps: [HttpClient]
-    //   }
-    // })
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http, './assets/locales/', '.json');
+        },
+        deps: [HttpClient],
+      },
+      defaultLanguage: 'en', // Defina o idioma padrão aqui
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-// export function HttpLoaderFactory(http: HttpClient) {
-//   return new TranslateHttpLoader(http);
-// }
-//: TranslateHttpLoader

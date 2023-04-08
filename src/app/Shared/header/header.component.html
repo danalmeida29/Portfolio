@@ -14,7 +14,7 @@
       <mat-icon>{{ themeIcon }}</mat-icon>
     </button>
 
-    <mat-icon class="icon_BR">
+    <mat-icon class="icon_BR" (click)="changeLanguage('pt-br')">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="35" width="35" version="1.0" viewBox="-2100 -1470 4200 2940">
         <defs>
          <path id="D" fill-rule="evenodd" d="m-31.5 0h33a30 30 0 0 0 30 -30v-10a30 30 0 0 0 -30 -30h-33zm13-13h19a19 19 0 0 0 19 -19v-6a19 19 0 0 0 -19 -19h-19z"/>
@@ -105,12 +105,13 @@
         <use id="σOct" y="575" xlink:href="#star5"/>
        </svg>
     </mat-icon>
-    <mat-icon class="icon_espanha">
+    
+    <mat-icon class="icon_espanha" (click)="changeLanguage('es')">
       <img src="../../../assets/espanha.ico">
     </mat-icon>
-    <mat-icon class="icon_EUA">
+
+    <mat-icon class="icon_EUA"  (click)="changeLanguage('en')">
       <img src="../../../assets/unitedstates.ico">
-    </mat-icon>
-    
+    </mat-icon> 
   </span>
 </mat-toolbar>
