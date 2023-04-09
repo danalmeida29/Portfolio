@@ -10,14 +10,7 @@ export class HeaderComponent implements OnInit {
 
   themeIcon = 'brightness_2';
 
-  @Input()
-  inicio: string = ""
-  @Input()
-  sobreMin: string = ""
-  @Input()
-  projetos: string = ""
-  @Input()
-  contato: string = ""
+  @Input() targetIds!: string[];
 
   constructor(
     private translateService: TranslateService
@@ -33,9 +26,17 @@ export class HeaderComponent implements OnInit {
     this.autoToggleTheme();
   }
 
+  scrollToTarget(targetId: string) {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   changeLanguage(language: string) {
     this.translateService.use(language);
   }
+  
   
   toggleTheme() {
     const body = document.body;
@@ -52,11 +53,11 @@ export class HeaderComponent implements OnInit {
     const body = document.body;
 
     if (currentHour >= 18 || currentHour < 6) {
-      // horário noturno
+     
       body.classList.add('dark-theme');
       this.themeIcon = 'brightness_4' ; 
     } else {
-      // horário diurno
+     
       body.classList.remove('dark-theme');
       this.themeIcon = 'brightness_2' ;
     }

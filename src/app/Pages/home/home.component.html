@@ -2,7 +2,7 @@
 <div class="container">
     <div class="apresentacao" id="inicio">
     
-        <app-header  (window:load)="autoToggleTheme()"  class="header" inicio="#inicio" sobreMin="#sobreMin" projetos="#projetos" contato="#contato"></app-header>
+        <app-header class="header" [targetIds]="['inicio', 'sobre-mim', 'projetos', 'contatos']"></app-header>
         
         <div class="apresentacao__title">
             <h3 class="apresentacao__text">Olá, Meu nome é
@@ -14,10 +14,10 @@
         </div>
     </div>
 
-    <div class="sobre-mim" id="sobreMin">
+    <div class="sobre-mim">
 
         <div class="tittle">
-            <h2 class="section__tittle">Sobre Mim</h2>
+            <h2 class="section__tittle" id="sobre-mim">Sobre Mim</h2>
         </div>
 
         <app-about 
@@ -26,10 +26,10 @@
 
     </div>
 
-    <div class="projetos" id="projetos">
+    <div class="projetos">
 
         <div class="tittle">
-            <h2 class="section__tittle">Projetos:</h2>
+            <h2 class="section__tittle" id="projetos">Projetos:</h2>
         </div>
         <div class="capsula">
             <div class="reactAngular">
@@ -93,10 +93,10 @@
 
     </div>
 
-    <div class="contatos" id="contato">
+    <div class="contatos">
 
         <div class="tittle">
-            <h2 class="section__tittle">Contato</h2>
+            <h2 class="section__tittle" id="contatos">Contato</h2>
         </div>
 
         <app-contato></app-contato>

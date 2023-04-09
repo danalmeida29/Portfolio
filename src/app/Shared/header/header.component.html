@@ -4,11 +4,9 @@
   </div>
 
   <span class="title-group">
-    <a class="a" [href]=[inicio] > Inicio </a>
-    <a class="a" [href]=[sobreMin]> Sobre-mim </a>
-    <a class="a" [href]=[projetos]> Projetos </a>
-    <a class="a" [href]=[contato]> Contato </a>
+    <a *ngFor="let id of targetIds" class="a" href="#{{id}}" (click.prevent)="scrollToTarget(id)" >{{id}}</a>
   </span>
+
   <span class="language">
     <button class="dark_light" (click)="toggleTheme()">
       <mat-icon>{{ themeIcon }}</mat-icon>
