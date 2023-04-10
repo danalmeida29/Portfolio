@@ -26,6 +26,10 @@ export class HeaderComponent implements OnInit {
     this.autoToggleTheme();
   }
 
+  /**
+   * Método de rolagem de página.
+   * @param targetId recebe o id da âncora
+   */
   scrollToTarget(targetId: string) {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -33,6 +37,10 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  /**
+   * Método que faz a internacionalização da pagina
+   * @param language recebe o idioma escolhido pelo o usuario
+   */
   changeLanguage(language: string) {
     const availableLanguages = ['pt-br', 'en', 'es'];
   
@@ -49,7 +57,9 @@ export class HeaderComponent implements OnInit {
     }
   }
   
-  
+  /**
+   * Método que muda o tema com o evento click no html
+   */
   toggleTheme() {
     const body = document.body;
     const isDark = body.classList.toggle('dark-theme');
@@ -59,6 +69,9 @@ export class HeaderComponent implements OnInit {
   @Output()
   autoToggleThemeEvent = new EventEmitter<void>();
   
+  /**
+   * Método que muda o tema de acordo com o horário local
+   */
   autoToggleTheme(){
     const hour = new Date();
     const currentHour = hour.getHours();

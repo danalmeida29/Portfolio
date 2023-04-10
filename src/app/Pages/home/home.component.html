@@ -29,7 +29,7 @@
     <div class="projetos">
 
         <div class="tittle">
-            <h2 class="section__tittle" id="projects">{{'projects' | translate}}:</h2>
+            <h2 class="section__tittle" id="projects">{{'projects' | translate}}</h2>
         </div>
         <div class="capsula">
             <div class="reactAngular">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="card_Posion"> 
                     <a href="https://github.com/danalmeida29/passaroUrbano/tree/devAlmeida0.1" target="_blank">
-                        <app-projetos projetoName="Passaro Urbano" projetoCover="./../../../assets/ImgProject/PassaroUrbano.png" projetoAlt="Projeto Passaro Urbano"></app-projetos>
+                        <app-projetos [projetoName]="('projectBrid'| translate)" projetoCover="./../../../assets/ImgProject/PassaroUrbano.png" projetoAlt="Projeto Passaro Urbano"></app-projetos>
                     </a>
                 </div>
                 <div class="card_Posion"> 
@@ -96,7 +96,7 @@
     <div class="contatos">
 
         <div class="tittle">
-            <h2 class="section__tittle" id="contact">{{'contact' | translate}}</h2>
+            <h2 class="section__tittle" id="contact">{{'contacts' | translate}}</h2>
         </div>
 
         <app-contato></app-contato>
