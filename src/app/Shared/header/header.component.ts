@@ -34,7 +34,19 @@ export class HeaderComponent implements OnInit {
   }
 
   changeLanguage(language: string) {
-    this.translateService.use(language);
+    const availableLanguages = ['pt-br', 'en', 'es'];
+  
+    if (availableLanguages.includes(language)) {
+      this.translateService.addLangs(availableLanguages);
+      this.translateService.setDefaultLang('pt-br');
+      const browserLang = this.translateService.getBrowserLang() ?? 'pt-br';
+      this.translateService.setDefaultLang(browserLang.match(/pt-br|en|es/) ? browserLang : 'pt-br');
+      this.translateService.use(language);
+      console.log(`Idioma selecionado: ${language}`);
+      console.log('Browser language:', browserLang);
+    } else {
+      console.error(`Language "${language}" is not available.`);
+    }
   }
   
   

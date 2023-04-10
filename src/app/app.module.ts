@@ -14,6 +14,10 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
+export function HttpLoaderFactory(http: HttpClient){
+  return new TranslateHttpLoader(http);
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +41,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
         },
         deps: [HttpClient],
       },
-      defaultLanguage: 'en', // Defina o idioma padrão aqui
+      defaultLanguage: 'pt-br', // Defina o idioma padrão aqui
     }),
   ],
   providers: [],

@@ -4,7 +4,7 @@
   </div>
 
   <span class="title-group">
-    <a *ngFor="let id of targetIds" class="a" href="#{{id}}" (click.prevent)="scrollToTarget(id)" >{{id}}</a>
+    <a *ngFor="let id of targetIds" class="a" href="#{{id}}" (click.prevent)="scrollToTarget(id)" >{{id | translate}}</a>
   </span>
 
   <span class="language">

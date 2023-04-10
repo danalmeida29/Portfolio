@@ -1,13 +1,13 @@
 
 <div class="container">
-    <div class="apresentacao" id="inicio">
+    <div class="apresentacao" id="home">
     
-        <app-header class="header" [targetIds]="['inicio', 'sobre-mim', 'projetos', 'contatos']"></app-header>
+        <app-header class="header" [targetIds]="['home', 'about', 'projects', 'contact']"></app-header>
         
         <div class="apresentacao__title">
-            <h3 class="apresentacao__text">Olá, Meu nome é
-                <h1 class="apresentacao__text_h1">Daniel Almeida.<a class="apresentacao__text_a">|</a> </h1>
-            <span>e sou Desenvolvedor Web Front-end</span></h3>
+            <h3 class="apresentacao__text">{{'introduction' | translate}}
+                <h1 class="apresentacao__text_h1">{{'name' | translate}}.<a class="apresentacao__text_a">|</a> </h1>
+            <span>{{'overview' | translate}}</span></h3>
         </div>
         <div class="apresentacao__img">
             <img class="avatar" src="assets/avatar1.png">
@@ -17,11 +17,11 @@
     <div class="sobre-mim">
 
         <div class="tittle">
-            <h2 class="section__tittle" id="sobre-mim">Sobre Mim</h2>
+            <h2 class="section__tittle" id="about">{{'about' | translate}}</h2>
         </div>
 
         <app-about 
-            textDescription="De São Paulo - SP e tenho 25 anos, estou no inicio da minha carreira como desenvolvedor, e em breve estarei me formando em Análise e Desenvolvimento de Sistemas pela Universidade Anhembi Morumbi. Sou apaixonado por tecnologia e games mas principalmente por desenvolvimento web. Fui voluntario por 2 anos e 10 meses como Desenvolvedor Front-End em um projeto para um centro de acolhimento de idosos; Onde fui responsavel pela criações de telas responsivas e funcionais do projeto. Atualmente estou estudando a biclioteca React e a Framework Next.js e prentendo começar a estudar as principais tecnologias e linguagens de programação Back-End, para futuramente me tornar um desenvolvedor Full-Stack.">
+            textDescription="{{'text' | translate}}">
         </app-about> 
 
     </div>
@@ -29,13 +29,13 @@
     <div class="projetos">
 
         <div class="tittle">
-            <h2 class="section__tittle" id="projetos">Projetos:</h2>
+            <h2 class="section__tittle" id="projects">{{'projects' | translate}}:</h2>
         </div>
         <div class="capsula">
             <div class="reactAngular">
                 <span id="angular"> 
                     <img src="../../../assets/angularLogo.png"/>
-                    Projetos Angular
+                    {{'angular' | translate}}
                 </span>
             </div>
             <div class="card-container">
@@ -68,7 +68,7 @@
             <div class="reactAngular">
                 <span id="react">
                     <img src="../../../assets/reactLogo.png"/>
-                    Projetos React
+                    {{'react' | translate}}
                 </span>
             </div>
             <div class="card-container">
@@ -96,13 +96,13 @@
     <div class="contatos">
 
         <div class="tittle">
-            <h2 class="section__tittle" id="contatos">Contato</h2>
+            <h2 class="section__tittle" id="contact">{{'contact' | translate}}</h2>
         </div>
 
         <app-contato></app-contato>
 
         <footer class="footer">
-            Todos os direitos reservados 2023 | Desenvolvido por Daniel Almeida ®
+            {{'footer' | translate}}
         </footer>
     </div>
 
