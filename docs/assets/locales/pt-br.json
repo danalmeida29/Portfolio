@@ -14,8 +14,7 @@
     "name": "Daniel Almeida",
     "overview":"e sou Desenvolvedor Web Front-end",
     "footer": "Todos os direitos reservados 2023 | Desenvolvido por Daniel Almeida ®",
-
-        
+    "loading":"Carregando...",
     "projectBrid": "Pássaro Urbano",
     "projectCalculator": "Calculadora"
 }
