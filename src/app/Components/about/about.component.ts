@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,11 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  @Input()
-  textDescription: string = ""
   constructor() { }
 
   ngOnInit(): void {
+
   }
+  
+
 
 }
