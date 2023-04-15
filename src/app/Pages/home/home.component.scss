@@ -226,21 +226,21 @@
       color: transparent;
     }
     .capsula{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      align-content: center;
-      flex-direction: column;
+      display: grid;
+      grid-template-areas:
+          'reactAngular'
+          'cards';
+      grid-template-columns: 100%;
+      grid-template-rows: 0px;
+      margin-top: 110px;
+  
     }
     .reactAngular{
       display: flex;
+      grid-area: reactAngular;
       align-items: center;
       width: 100vh;
-      margin-top: 110px;
-      margin-right: 390px;
-      margin-left: -390px;
-      margin-bottom: -55px;
+      margin-left: -30px;
       justify-content: flex-start;
       flex-direction: row;
       span{
@@ -284,6 +284,7 @@
 
     .card-container {
       width: auto;
+      grid-area: cards;
       min-width: 350px;
       height: auto;
       min-height: 350px;
