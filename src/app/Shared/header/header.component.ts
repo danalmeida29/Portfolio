@@ -20,10 +20,9 @@ export class HeaderComponent implements OnInit {
     setInterval(() => {
       this.autoToggleTheme();
     }, 60 * 60 * 1000);
-  
-  }
-  ngAfterViewInit(){
+
     this.autoToggleTheme();
+  
   }
 
   /**
