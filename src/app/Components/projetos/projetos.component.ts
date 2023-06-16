@@ -11,6 +11,12 @@ export class ProjetosComponent implements OnInit {
   projetoName: string =""
 
   @Input()
+  subTitle: string =""
+
+  @Input()
+  link: string =""
+
+  @Input()
   projetoCover: string =""
 
   @Input()

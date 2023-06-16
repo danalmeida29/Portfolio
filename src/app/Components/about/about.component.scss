@@ -99,6 +99,47 @@
       gap: 10px;
       font-size: 25px;
       font-weight: 700;
+      .bm-io{
+        font-size: 18px;
+        font-weight: 800;
+        display: flex;
+        width: 15px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 3px;
+      }
+    }
+    .fa-BootsAngular{
+      width: 130px;
+      height: auto;
+      margin-bottom: -3px;
+      margin-top: 3px;
+      #barra{
+        font-size: 70px;
+        font-weight: 100;
+      }
+    }
+    .fa-firebase{
+      width: 65px;
+      height: auto;
+      margin-bottom: -3px;
+    }
+    .fa-mongoDB{
+      width: 65px;
+      height: auto;
+      margin-bottom: -3px;
+    }
+    .fa-figma{
+      width: 65px;
+      height: auto;
+      margin-bottom: -3px;
+    }
+    .fa-tailwind{
+      width: 65px;
+      height: auto;
+      margin-bottom: -3px;
     }
     .fa-react{
       width: 65px;

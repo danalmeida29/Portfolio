@@ -1,6 +1,10 @@
 <div class="ordem"> 
-    <h3 class="tittle_card">{{projetoName}}</h3>
     <mat-card class="card">
         <img [src]=[projetoCover] [alt]=[projetoAlt] />
     </mat-card>
+    <h3 class="tittle_card">{{projetoName}}</h3>
+    <h3 class="subTitle">{{subTitle}}</h3>
+    <a class="visitar" [href]=[link] target="_blank">
+        <button>Visitar</button>
+    </a>
 </div>

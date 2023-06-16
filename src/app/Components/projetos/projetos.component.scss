@@ -1,61 +1,73 @@
+
 .card {
     position: relative;
-    background: rgb(255 255 255 / 10%);
     display: flex;
-    width: 339px;
-    height: 175px;
+    width: 300px;
+    height: 20rem;
+    top: -50px;
+    margin-bottom: -45px;
     overflow: hidden;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    align-content: center;
     justify-content: center;
-    cursor: pointer;
 }
 
-.card::before {
-    position: absolute;
-    background-color: #0009;
-    color: aliceblue;
-    font-weight: 500;
-    content: 'Clique aqui para abrir o projeto';
+.visitar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
-    height: 100%;
-    display: grid;
-    place-content: center;
-    transform: translateY(100%);
-    transition: transform 0.6s;
-}
-  
-.card:hover::before {
-    transform: translateY(0%);
-}
+    height: 55px;
+    border-radius: 7px;
 
+    text-decoration: none;
+    margin-bottom: 5px;
+    >button{
+        font-size: 1.0rem;
+        font-weight: 500;
+        cursor: pointer;
+        color:white;
+    }
+}
 .card img{
-    width: 375px;
-    height: 208px;
-    margin-top: -16px;
+    width: 100%;
+    height: 13rem;
+    box-shadow: #000 -1px 3px 7px 0px;
+    border-radius: 5px;
 }
 
 .ordem{
     display: flex;
-    width: auto;
-    height: auto;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+
+    margin-top: 15px;
+
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: #e0e0e00a;
 }
 
 .tittle_card{
-    font-family: 'Ubuntu-Light';
+    font-family: 'Ubuntu-Bold';
     font-weight: 600;
-    font-size: 1.4rem;
-    margin-bottom: 0px;
-    transition: all 0.5s;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+    margin-top: -45px;
     cursor:default;
 }
 
-.tittle_card:hover{
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+
+.subTitle{
+    font-family: 'Ubuntu-Bold';
+    font-weight: 500;
+    font-size: 0.8rem;
+    cursor: default;
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
